@@ -1,0 +1,102 @@
+WIS-GREP...
+TEST 0 - clean build (program should compile without errors or warnings)
+RESULT passed
+
+TEST 1 - simple test - find one line out of three in the file
+RESULT passed
+
+TEST 2 - file does not exist
+RESULT passed
+
+TEST 3 - too few command-line arguments (zero)
+RESULT passed
+
+TEST 4 - standard input test
+RESULT passed
+
+TEST 5 - long search term
+RESULT passed
+
+TEST 6 - long lines of text
+RESULT passed
+
+TEST 7 - long file test (with few matches)
+RESULT passed
+
+TEST 8 - 
+RESULT passed
+
+TEST SCORE: 8
+
+
+WIS-TAR...
+TEST 0 - clean build (program should compile without errors or warnings)
+RESULT passed
+
+TEST 1 - tar 2 simple file
+RESULT passed
+
+TEST 2 - simple test - tar one file
+RESULT passed
+
+TEST 3 - no arguments
+RESULT passed
+
+TEST 4 - Only tar file name as an argument
+RESULT passed
+
+TEST 5 - Missing file to tar
+RESULT passed
+
+TEST 6 - tar 2 empty files
+RESULT passed
+
+TEST 7 - tar 2 files ( 1 empty and 1 not empty)
+RESULT passed
+
+TEST 8 - Overwrite tar file
+RESULT passed
+
+TEST 9 - tar 2 simple file
+RESULT passed
+
+TEST 10 - 
+RESULT passed
+
+TEST SCORE: 10
+
+
+WIS-UNTAR...
+TEST 0 - clean build (program should compile without errors or warnings)
+RESULT passed
+
+TEST 1 - no arguments
+RESULT passed
+
+TEST 2 - Tar containg one file
+RESULT passed
+
+TEST 3 - input: tar of 2 files
+RESULT passed
+
+TEST 4 - Tar containg one empty file
+RESULT passed
+
+TEST 5 - input: tar of 2 empty files
+RESULT passed
+
+TEST 6 - input: tar of 2 files, 1 empty adn 1 not empty
+RESULT passed
+
+TEST 7 - Tar file doesn't exist
+RESULT passed
+
+TEST 8 - Test overwriting of files
+RESULT passed
+
+TEST 9 - 
+RESULT passed
+
+TEST SCORE: 9
+
+
