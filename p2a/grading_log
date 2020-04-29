@@ -1,0 +1,316 @@
+starting build
+
+**********************************************************************
+
+Test build
+compile smash.c
+
+**********************************************************************
+gcc smash.c -o smash
+
+
+test build PASSED (5 of 5)
+ (compile smash.c)
+
+starting cd
+
+**********************************************************************
+
+Test cd
+cd with argument, and cd without argument
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test cd PASSED (10 of 10)
+ (cd with argument, and cd without argument)
+
+starting badcd
+
+**********************************************************************
+
+Test badcd
+cd to a bad directory
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+starting exec
+
+**********************************************************************
+
+Test exec
+path should be /bin
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+starting badexec
+
+**********************************************************************
+
+Test badexec
+run programs that do not exist in /bin
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test badexec PASSED (5 of 5)
+ (run programs that do not exist in /bin)
+
+starting path
+
+**********************************************************************
+
+Test path
+run path and a program that exists in a given path
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test path PASSED (5 of 5)
+ (run path and a program that exists in a given path)
+
+starting path2
+
+**********************************************************************
+
+Test path2
+run path with a long pathname and many different paths
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test path2 PASSED (5 of 5)
+ (run path with a long pathname and many different paths)
+
+starting line
+
+**********************************************************************
+
+Test line
+line with maximum allowed length
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test line PASSED (5 of 5)
+ (line with maximum allowed length)
+
+starting whitespace
+
+**********************************************************************
+
+Test whitespace
+leading and trailing whitespace, full whitespaces or empty string
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+starting rdr
+
+**********************************************************************
+
+Test rdr
+simple redirection with no standard error
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test rdr PASSED (10 of 10)
+ (simple redirection with no standard error)
+
+starting rdr2
+
+**********************************************************************
+
+Test rdr2
+simple redirection with standard error
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test rdr2 PASSED (5 of 5)
+ (simple redirection with standard error)
+
+starting par
+
+**********************************************************************
+
+Test par
+running commands in parallel
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+Failure: ./smash gave incorrect standard output.
+Expected: "smash> hi\nsmash>"Got:      "smash> hi\nsmash> smash> smash> smash>"
+
+
+test par FAILED (0 of 5)
+ (running commands in parallel)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//par/in
+ and check out the test folder
+ /u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//par
+ to compare your output with reference outputs. 
+
+starting mul
+
+**********************************************************************
+
+Test mul
+running multiple commands at once
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test mul PASSED (5 of 5)
+ (running multiple commands at once)
+
+starting onlyamb
+
+**********************************************************************
+
+Test onlyamb
+five ambersands in a row
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test onlyamb PASSED (5 of 5)
+ (five ambersands in a row)
+
+starting mulpar
+
+**********************************************************************
+
+Test mulpar
+& and ; tested in one command
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+
+
+test mulpar PASSED (10 of 10)
+ (& and ; tested in one command)
+
+starting space
+
+**********************************************************************
+
+Test space
+command errors with and without space
+
+**********************************************************************
+/tmp/tmpDJfBwm/p/./smash
+Failure: ./smash gave incorrect standard output.
+Expected: "smash> hi\nsmash> hello\nsmash>"Got:      "smash> hi\nsmash> hello\nsmash> smash> smash> hello\nsmash> smash>"
+
+
+test space FAILED (0 of 10)
+ (command errors with and without space)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//space/in
+ and check out the test folder
+ /u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//space
+ to compare your output with reference outputs. 
+
+**********************************************************************
+Summary:
+test build PASSED (5 of 5)
+ (compile smash.c)
+
+test cd PASSED (10 of 10)
+ (cd with argument, and cd without argument)
+
+test badcd PASSED (5 of 5)
+ (cd to a bad directory)
+
+test exec PASSED (5 of 5)
+ (path should be /bin)
+
+test badexec PASSED (5 of 5)
+ (run programs that do not exist in /bin)
+
+test path PASSED (5 of 5)
+ (run path and a program that exists in a given path)
+
+test path2 PASSED (5 of 5)
+ (run path with a long pathname and many different paths)
+
+test line PASSED (5 of 5)
+ (line with maximum allowed length)
+
+test whitespace PASSED (5 of 5)
+ (leading and trailing whitespace, full whitespaces or empty string)
+
+test rdr PASSED (10 of 10)
+ (simple redirection with no standard error)
+
+test rdr2 PASSED (5 of 5)
+ (simple redirection with standard error)
+
+test par FAILED (0 of 5)
+ (running commands in parallel)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//par/in
+ and check out the test folder
+ /u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//par
+ to compare your output with reference outputs. 
+
+test mul PASSED (5 of 5)
+ (running multiple commands at once)
+
+test onlyamb PASSED (5 of 5)
+ (five ambersands in a row)
+
+test mulpar PASSED (10 of 10)
+ (& and ; tested in one command)
+
+test space FAILED (0 of 10)
+ (command errors with and without space)
+ ./smash gave incorrect standard output.
+
+ Test it yourself by running
+ smash </u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//space/in
+ and check out the test folder
+ /u/s/h/shivangi/private/cs537ta/p2a/sp20/handinTests/p2a//space
+ to compare your output with reference outputs. 
+
+Passed 14 of 16 tests.
+Overall 14 of 16
+Points 85 of 100
+################################################################################
+
+Please read above log carefully and contact grader TA Shivangi Kamat or 
+Professor Venkataraman incase you feel like this is not your grade.
+
+################################################################################
+
