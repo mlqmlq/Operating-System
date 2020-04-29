@@ -1,0 +1,7 @@
+Group: [linquanma, xinyil]
+Grade Summary:
+p3a grade: 43 / 45
+p3b grade: 15 / 15
+quiz grade (5%): 10.0 / 10.0 
+final grade = 15 * ((p3a_grade + p3b_grade) * 0.95 / (45 + 15) + quiz_grade / 10 * 0.05)
+final grade: 14.52 / 15
