@@ -1,0 +1,23 @@
+Username: linquanma
+Slip Days used: 0
+
+Automated Grading
+************************************************************
+Mode (simple/eager): simple
+Tests Passed (-o flag)[80%]: 30 / 30
+Tests Passed (-p flag)[20%]: 36 (more info at grade.log)
+
+Tests score: 1 / 1
+************************************************************
+
+Manual Grading (less than 1 only if code does not pass tests)
+************************************************************
+Code score: 1
+************************************************************
+
+Final Score
+************************************************************
+Formula: (1/3) * code_score + (2/3) * tests_score - penalties
+
+Final score: 1.000 / 1.000
+************************************************************

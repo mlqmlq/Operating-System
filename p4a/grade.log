@@ -1,0 +1,326 @@
+test-script stdout:
+[Test1 - Wordcounting 1 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file)
+  Running $./wordcount_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 1 seconds (perf mode)
+** 0.173 secs elapsed **
+[Test1 Success]
+
+[Test2 - Wordcounting 1 file(s) with 1 mapper(s) and 4 reducer(s) -- default partitioner / no combiner]
+(1mb file)
+  Running $./wordcount_m1r4 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 1 seconds (perf mode)
+** 0.164 secs elapsed **
+[Test2 Success]
+
+[Test3 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- default partitioner / no combiner]
+(10mb file)
+  Running $./wordcount_m1r10 /users/kanellis/os/tests/simple/inputs/file10m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 1.610 secs elapsed **
+[Test3 Success]
+
+[Test4 - Wordcounting 10 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 2.129 secs elapsed **
+[Test4 Success]
+
+[Test5 - Wordcounting 10 file(s) with 4 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_m4r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 8 seconds (perf mode)
+** 2.727 secs elapsed **
+[Test5 Success]
+
+[Test6 - Wordcounting 10 file(s) with 1 mapper(s) and 4 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_m1r4 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 1.747 secs elapsed **
+[Test6 Success]
+
+[Test7 - Wordcounting 10 file(s) with 10 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_m10r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 3.119 secs elapsed **
+[Test7 Success]
+
+[Test8 - Wordcounting 10 file(s) with 1 mapper(s) and 10 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_m1r10 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 3 seconds (perf mode)
+** 1.433 secs elapsed **
+[Test8 Success]
+
+[Test9 - Wordcounting 1 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / custom combiner]
+(1mb file)
+  Running $./wordcount_cc_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 1 seconds (perf mode)
+** 0.155 secs elapsed **
+[Test9 Success]
+
+[Test10 - Wordcounting 1 file(s) with 1 mapper(s) and 4 reducer(s) -- default partitioner / custom combiner]
+(1mb file)
+  Running $./wordcount_cc_m1r4 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 1 seconds (perf mode)
+** 0.155 secs elapsed **
+[Test10 Success]
+
+[Test11 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- default partitioner / custom combiner]
+(10mb file)
+  Running $./wordcount_cc_m1r10 /users/kanellis/os/tests/simple/inputs/file10m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 1.891 secs elapsed **
+[Test11 Success]
+
+[Test12 - Wordcounting 10 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_cc_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 1.758 secs elapsed **
+[Test12 Success]
+
+[Test13 - Wordcounting 10 file(s) with 1 mapper(s) and 10 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_cc_m1r10 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 1.862 secs elapsed **
+[Test13 Success]
+
+[Test14 - Wordcounting 10 file(s) with 1 mapper(s) and 4 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_cc_m1r4 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 5 seconds (perf mode)
+** 1.854 secs elapsed **
+[Test14 Success]
+
+[Test15 - Wordcounting 10 file(s) with 10 mapper(s) and 1 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_cc_m10r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 3 seconds (perf mode)
+** 1.579 secs elapsed **
+[Test15 Success]
+
+[Test16 - Wordcounting 10 file(s) with 1 mapper(s) and 10 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_cc_m1r10 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 1.681 secs elapsed **
+[Test16 Success]
+
+[Test17 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- custom partitioner / no combiner]
+(1mb file)
+  Running $./wordcount_cp_m1r10 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 1 seconds (perf mode)
+** 0.142 secs elapsed **
+[Test17 Success]
+
+[Test18 - Wordcounting 1 file(s) with 1 mapper(s) and 50 reducer(s) -- custom partitioner / no combiner]
+(10mb file)
+  Running $./wordcount_cp_m1r50 /users/kanellis/os/tests/simple/inputs/file10m.in
+  INFO: Timeout for this testcase is 8 seconds (perf mode)
+** 1.325 secs elapsed **
+[Test18 Success]
+
+[Test19 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- custom partitioner / custom combiner]
+(1mb file)
+  Running $./wordcount_cp_cc_m1r10 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 1 seconds (perf mode)
+** 0.143 secs elapsed **
+[Test19 Success]
+
+[Test20 - Wordcounting 1 file(s) with 1 mapper(s) and 50 reducer(s) -- custom partitioner / custom combiner]
+(10mb file)
+  Running $./wordcount_cp_cc_m1r50 /users/kanellis/os/tests/simple/inputs/file10m.in
+  INFO: Timeout for this testcase is 8 seconds (perf mode)
+** 1.603 secs elapsed **
+[Test20 Success]
+
+[Test21 - Wordcounting iterates 2 times -- 10 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_multi_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 1.953 secs elapsed **
+** 2.290 secs elapsed **
+** total 4.243 secs elapsed **
+[Test21 Success]
+
+[Test22 - Wordcounting iterates 10 times -- 10 file(s) with 10 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file * 10)
+  Running $./wordcount_multi_m10r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 3.145 secs elapsed **
+** 3.058 secs elapsed **
+** 2.976 secs elapsed **
+** 2.972 secs elapsed **
+** 3.076 secs elapsed **
+** 3.006 secs elapsed **
+** 2.904 secs elapsed **
+** 2.878 secs elapsed **
+** 3.124 secs elapsed **
+** 3.053 secs elapsed **
+** total 30.191 secs elapsed **
+[Test22 Success]
+
+[Test23 - Wordcounting iterates 10 times -- 10 file(s) with 10 mapper(s) and 4 reducer(s) -- default partitioner / no combiner]
+(10mb file + 1mb file * 9)
+  Running $./wordcount_multi_m10r4 /users/kanellis/os/tests/simple/inputs/file10m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 4.402 secs elapsed **
+** 4.384 secs elapsed **
+** 4.303 secs elapsed **
+** 4.591 secs elapsed **
+** 4.566 secs elapsed **
+** 4.619 secs elapsed **
+** 4.414 secs elapsed **
+** 4.427 secs elapsed **
+** 4.326 secs elapsed **
+** 4.307 secs elapsed **
+** total 44.338 secs elapsed **
+[Test23 Success]
+
+[Test24 - Wordcounting iterates 10 times -- 10 file(s) with 4 mapper(s) and 4 reducer(s) -- default partitioner / no combiner]
+(10mb file + 1mb file * 9)
+  Running $./wordcount_multi_m4r4 /users/kanellis/os/tests/simple/inputs/file10m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 4.549 secs elapsed **
+** 4.159 secs elapsed **
+** 4.003 secs elapsed **
+** 3.908 secs elapsed **
+** 4.112 secs elapsed **
+** 3.937 secs elapsed **
+** 3.964 secs elapsed **
+** 4.052 secs elapsed **
+** 4.234 secs elapsed **
+** 3.890 secs elapsed **
+** total 40.808 secs elapsed **
+[Test24 Success]
+
+[Test25 - Wordcounting iterates 2 times -- 10 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_multi_cc_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 1.844 secs elapsed **
+** 1.938 secs elapsed **
+** total 3.782 secs elapsed **
+[Test25 Success]
+
+[Test26 - Wordcounting iterates 10 times -- 10 file(s) with 10 mapper(s) and 1 reducer(s) -- default partitioner / custom combiner]
+(1mb file * 10)
+  Running $./wordcount_multi_cc_m10r1 /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 30 seconds (perf mode)
+** 1.564 secs elapsed **
+** 1.531 secs elapsed **
+** 1.523 secs elapsed **
+** 1.536 secs elapsed **
+** 1.437 secs elapsed **
+** 1.511 secs elapsed **
+** 1.460 secs elapsed **
+** 1.461 secs elapsed **
+** 1.424 secs elapsed **
+** 1.406 secs elapsed **
+** total 14.854 secs elapsed **
+[Test26 Success]
+
+[Test27 - Wordcounting iterates 10 times -- 10 file(s) with 10 mapper(s) and 4 reducer(s) -- default partitioner / custom combiner]
+(10mb file + 1mb file * 9)
+  Running $./wordcount_multi_cc_m10r4 /users/kanellis/os/tests/simple/inputs/file10m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 3.135 secs elapsed **
+** 3.525 secs elapsed **
+** 3.173 secs elapsed **
+** 3.390 secs elapsed **
+** 3.304 secs elapsed **
+** 3.140 secs elapsed **
+** 3.364 secs elapsed **
+** 2.983 secs elapsed **
+** 3.231 secs elapsed **
+** 3.152 secs elapsed **
+** total 32.396 secs elapsed **
+[Test27 Success]
+
+[Test28 - Wordcounting iterates 10 times -- 10 file(s) with 4 mapper(s) and 4 reducer(s) -- default partitioner / custom combiner]
+(10mb file + 1mb file * 9)
+  Running $./wordcount_multi_cc_m4r4 /users/kanellis/os/tests/simple/inputs/file10m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 3.044 secs elapsed **
+** 3.207 secs elapsed **
+** 3.441 secs elapsed **
+** 3.084 secs elapsed **
+** 3.001 secs elapsed **
+** 3.021 secs elapsed **
+** 3.510 secs elapsed **
+** 3.260 secs elapsed **
+** 2.919 secs elapsed **
+** 3.177 secs elapsed **
+** total 31.665 secs elapsed **
+[Test28 Success]
+
+[Test29 - **Valgrid Test** Wordcounting 1 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / no combiner]
+(1mb file)
+  Running $ valgrind --leak-check=full --show-leak-kinds=all --log-file=valgrind_test29_wordcount.log ./wordcount_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 2.004 secs elapsed **
+[Test29 Success]
+
+[Test30 - **Valgrid Test** Wordcounting 1 file(s) with 1 mapper(s) and 1 reducer(s) -- default partitioner / custom combiner]
+(1mb file)
+  Running $ valgrind --leak-check=full --show-leak-kinds=all --log-file=valgrind_test30_wordcount_cc.log ./wordcount_cc_m1r1 /users/kanellis/os/tests/simple/inputs/file1m.in
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 1.951 secs elapsed **
+[Test30 Success]
+
+
+[*****************************************]
+[*** Running Performance-related tests ***]
+[*****************************************]
+
+[Test31 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- no partitioner / no combiner]
+(10mb file many keys)
+  Running $./wordcount_m1r10 /users/kanellis/os/tests/simple/inputs/xaa
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 1.954 secs elapsed **
+[Test31 Success]
+
+[Test32 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- no partitioner / custom combiner]
+(10mb file many keys)
+  Running $./wordcount_cc_m1r10 /users/kanellis/os/tests/simple/inputs/xaa
+  INFO: Timeout for this testcase is 10 seconds (perf mode)
+** 2.130 secs elapsed **
+[Test32 Success]
+
+[Test33 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- no partitioner / no combiner]
+(100mb file few keys)
+  Running $./wordcount_m1r10 /users/kanellis/os/tests/simple/inputs/file100m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 18.133 secs elapsed **
+[Test33 Success]
+
+[Test34 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- no partitioner / custom combiner]
+(100mb file few keys)
+  Running $./wordcount_cc_m1r10 /users/kanellis/os/tests/simple/inputs/file100m.in
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 20.339 secs elapsed **
+[Test34 Success]
+
+[Test35 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- no partitioner / no combiner]
+(100mb file many keys)
+  Running $./wordcount_m1r10 /users/kanellis/os/tests/simple/inputs/web-BerkStan.txt
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 22.186 secs elapsed **
+[Test35 Success]
+
+[Test36 - Wordcounting 1 file(s) with 1 mapper(s) and 10 reducer(s) -- no partitioner / custom combiner]
+(100mb file many keys)
+  Running $./wordcount_cc_m1r10 /users/kanellis/os/tests/simple/inputs/web-BerkStan.txt
+  INFO: Timeout for this testcase is 90 seconds (perf mode)
+** 23.838 secs elapsed **
+[Test36 Success]
+
+
+Test Result [36/36]
+Delete *.out files
+Delete useless *.c files
