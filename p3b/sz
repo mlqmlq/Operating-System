@@ -1,0 +1,72 @@
+kernel/console.c:232:      if(proc->killed){
+kernel/exec.c:81:  safestrcpy(proc->name, last, sizeof(proc->name));
+kernel/exec.c:84:  oldpgdir = proc->pgdir;
+kernel/exec.c:85:  proc->pgdir = pgdir;
+kernel/exec.c:86:  proc->sz = sz;
+kernel/exec.c:87:  proc->tf->eip = elf.entry;  // main
+kernel/exec.c:88:  proc->tf->esp = sp;
+kernel/fs.c:112:// inode; references are typically kept in struct file and in proc->cwd.
+kernel/fs.c:575:    ip = idup(proc->cwd);
+kernel/ide.c:148:  // Assuming will not sleep too long: ignore proc->killed.
+kernel/mp.c:115:      if(ncpu != proc->apicid){
+kernel/mp.c:116:        cprintf("mpinit: ncpu=%d apicid=%d\n", ncpu, proc->apicid);
+kernel/mp.c:119:      if(proc->flags & MPBOOT)
+kernel/pipe.c:83:      if(p->readopen == 0 || proc->killed){
+kernel/pipe.c:104:    if(proc->killed){
+kernel/proc.c:111:  sz = proc->sz;
+kernel/proc.c:113:    if((sz = allocuvm(proc->pgdir, sz, sz + n)) == 0)
+kernel/proc.c:116:    if((sz = deallocuvm(proc->pgdir, sz, sz + n)) == 0)
+kernel/proc.c:119:  proc->sz = sz;
+kernel/proc.c:138:  if((np->pgdir = copyuvm(proc->pgdir, proc->sz)) == 0){
+kernel/proc.c:144:  np->sz = proc->sz;
+kernel/proc.c:146:  *np->tf = *proc->tf;
+kernel/proc.c:152:    if(proc->ofile[i])
+kernel/proc.c:153:      np->ofile[i] = filedup(proc->ofile[i]);
+kernel/proc.c:154:  np->cwd = idup(proc->cwd);
+kernel/proc.c:158:  safestrcpy(np->name, proc->name, sizeof(proc->name));
+kernel/proc.c:176:    if(proc->ofile[fd]){
+kernel/proc.c:177:      fileclose(proc->ofile[fd]);
+kernel/proc.c:178:      proc->ofile[fd] = 0;
+kernel/proc.c:182:  iput(proc->cwd);
+kernel/proc.c:183:  proc->cwd = 0;
+kernel/proc.c:188:  wakeup1(proc->parent);
+kernel/proc.c:200:  proc->state = ZOMBIE;
+kernel/proc.c:238:    if(!havekids || proc->killed){
+kernel/proc.c:276:      swtch(&cpu->scheduler, proc->context);
+kernel/proc.c:289:// and have changed proc->state.
+kernel/proc.c:299:  if(proc->state == RUNNING)
+kernel/proc.c:304:  swtch(&proc->context, cpu->scheduler);
+kernel/proc.c:313:  proc->state = RUNNABLE;
+kernel/proc.c:352:  proc->chan = chan;
+kernel/proc.c:353:  proc->state = SLEEPING;
+kernel/proc.c:357:  proc->chan = 0;
+kernel/proc.h:3:// Segments in proc->gdt.
+kernel/syscall.c:48:  return fetchint(proc, proc->tf->esp + 4 + 4*n, ip);
+kernel/syscall.c:61:  if((uint)i >= proc->sz || (uint)i+size > proc->sz)
+kernel/syscall.c:117:  num = proc->tf->eax;
+kernel/syscall.c:119:    proc->tf->eax = syscalls[num]();
+kernel/syscall.c:122:            proc->pid, proc->name, num);
+kernel/syscall.c:123:    proc->tf->eax = -1;
+kernel/sysproc.c:41:  return proc->pid;
+kernel/sysproc.c:52:  addr = proc->sz;
+kernel/sysproc.c:69:    if(proc->killed){
+kernel/sysfile.c:22:  if(fd < 0 || fd >= NOFILE || (f=proc->ofile[fd]) == 0)
+kernel/sysfile.c:39:    if(proc->ofile[fd] == 0){
+kernel/sysfile.c:40:      proc->ofile[fd] = f;
+kernel/sysfile.c:93:  proc->ofile[fd] = 0;
+kernel/sysfile.c:339:  iput(proc->cwd);
+kernel/sysfile.c:340:  proc->cwd = ip;
+kernel/sysfile.c:384:      proc->ofile[fd0] = 0;
+kernel/trap.c:38:    if(proc->killed)
+kernel/trap.c:40:    proc->tf = tf;
+kernel/trap.c:42:    if(proc->killed)
+kernel/trap.c:89:            proc->pid, proc->name, tf->trapno, tf->err, cpu->id, tf->eip, 
+kernel/trap.c:91:    proc->killed = 1;
+kernel/trap.c:97:  if(proc && proc->killed && (tf->cs&3) == DPL_USER)
+kernel/trap.c:102:  if(proc && proc->state == RUNNING && tf->trapno == T_IRQ0+IRQ_TIMER)
+kernel/trap.c:106:  if(proc && proc->killed && (tf->cs&3) == DPL_USER)
+kernel/vm.c:179:  cpu->ts.esp0 = (uint)proc->kstack + KSTACKSIZE;
+kernel/vm.c:379:    pte0 = walkpgdir(proc->pgdir, (void *)curr, 0);
+kernel/vm.c:388:  lcr3(PADDR(proc->pgdir));
+kernel/vm.c:403:    pte0 = walkpgdir(proc->pgdir, (void *)curr, 0);
+kernel/vm.c:412:  lcr3(PADDR(proc->pgdir));
